@@ -32,7 +32,8 @@ function SteamCommunity(options) {
 		"gzip": true,
 		"headers": {
 			"User-Agent": options.userAgent || USER_AGENT
-		}
+		},
+		proxy: options.proxy,
 	};
 
 	if (typeof options == "string") {
